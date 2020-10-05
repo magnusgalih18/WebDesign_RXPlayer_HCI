@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RX PLAYER - REGISTER</title>
+    <link rel="icon" href="../Code/asset/Logo_RX_Player.jpg" type="image/jpg">
+    <link rel="stylesheet" href="../Code/styleForHomepage1.css">
+</head>
+<body class="body-register">
+    <header>
+        <nav>
+          <div class="logotitle">
+              <div>
+                  <img class="logo1" src="../Code/asset/Logo_RX_Player.jpg" alt="">
+              </div>
+              <div class="title">
+                  <li>RX PLAYER</li>
+              </div>
+          </div>
+          <ul class="nav-links">
+            <li><a href="../Code/homepage1.html">Home</a></li>
+            <li><a href="../Code/Register.html">Register</a></li>
+            <li><a href="../Code/premium.html">Premium</a></li>
+            <li><a href="../Code/top10AsianMusic.html">Top 10 Asian Music</a></li>
+            <li><a href="../Code/MusicByGenre.html">Music by Genre</a></li>
+        </ul>
+            <div class="buttonnav">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <script src="homepage.js"></script>
+    <div class="main-register">
+        <div class="register-form">
+            <div class="register-title">
+                <h3>Join With Us!</h3>
+            </div>
+    <form name="RegistForm" action="../Code/premium.html" onsubmit="return validateform()" method="post">
+            <label for="accntlabel" class="formlabel">Account</label>
+            <br>
+            <input type="text" placeholder="Full Name" name="FullNameForm">
+            <br>
+            <input type="number" placeholder="Phone Number" name="phonenumber">
+            <br>
+            <input type="email" placeholder="Email Address" name="emailform">
+            <br>
+            <input type="password" placeholder="Password" name="password">
+            <br>
+            <input type="password" placeholder="Confirm Password" name="confirmpassword">
+            <br>
+            <label for="doblabel" class="formlabel">Date of Birth</label>
+            <br>
+            <input type="date" placeholder="mm/dd/yyy" name="date">
+            <div class="gender">
+            <label for="genderlabel" class="formlabel">Gender</label>
+            </div>
+            <br>
+            <div class="gender-form">
+            <input value="" type="radio" id="thisgender" name="gender" class="thisradio">
+            <label for="male">Male</label>
+            <input values="female" type="radio" id="female" name="gender" class="thisradio">
+            <label for="female">Female</label>
+            <input value="other" type="radio" id="other" name="gender" class="thisradio">
+            <label for="other">Other</label>
+            </div>
+            <br>
+            <label for="pymethod" class="formlabel">Payment Method</label>
+            <br>
+            <select id="pymethod" name="pymethod">
+              <option value="0">Select</option>
+              <option value="PayPal">PayPal</option>
+              <option value="BankTransfer">Bank Transfer</option>
+              <option value="MobileCharge">Mobile Charge</option>
+              <option value="CreditCard">CreditCard</option>
+              <option value="ovo">OVO</option>
+              <option value="Gopay">Gopay</option>
+            </select>
+            <br>
+            <input type="checkbox" id="agree" name="agree">
+            <label for="agree">By clicking Register, you agree to the RX Player Terms 
+                and Conditions of Use.</label>
+            <br>
+            <div class="submitbtn">
+            <input type="submit" value="REGISTER">
+            </div>
+        </div>
+      </form>
+    </div>
+</body>
+  <footer>
+      <div class="footer-container">
+        <div class="footer-Text">
+          <h4>Our Social Media</h4>
+        </div>
+        <div class="socialMedia">
+          <li><img class="iconsosmed" src="../Code/asset/footer/instagram.png"></li>
+          <li><img class="iconsosmed" src="../Code/asset/footer/facebook.png"></li>
+          <li><img class="iconsosmed" src="../Code/asset/footer/twitter.png"></li>
+        </div>
+      </div>
+  </footer>
+</html>
